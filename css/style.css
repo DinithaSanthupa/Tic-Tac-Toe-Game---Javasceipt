@@ -8,13 +8,18 @@ body {
   color: #4c6986;
 }
 
+.tile {
+  max-width: 500px;
+}
+
 .wrapper {
   max-width: 1440px;
   height: 800px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 auto;
+  padding: 80px;
 }
 
 h1 {
@@ -103,4 +108,26 @@ h1 {
 
 .board-tile:hover {
   background: #eeeeee;
+}
+
+.tile-X {
+  color: #42bed4;
+}
+
+.tile-O {
+  color: #d7bafb;
+}
+
+.tile-winner {
+  color: #23ce6b;
+}
+
+@media only screen and (max-width: 1200px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .left {
+    margin-bottom: 50px;
+  }
 }
