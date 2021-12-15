@@ -53,16 +53,26 @@ h1 {
   font-size: 24px;
 }
 
-.header .player-x {
+.header .player-X {
   flex: 1;
   border-bottom: 5px solid #eee;
   padding-bottom: 8px;
 }
 
-.header .player-o {
+.player-X.active {
+  color: #42bed4;
+  border-color: #42bed4;
+}
+
+.header .player-O {
   flex: 1;
   border-bottom: 5px solid #eee;
   padding-bottom: 8px;
+}
+
+.player-O.active {
+  color: #d7bafb;
+  border-color: #d7bafb;
 }
 
 .board {
